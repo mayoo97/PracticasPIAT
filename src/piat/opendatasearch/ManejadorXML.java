@@ -23,27 +23,27 @@ public class ManejadorXML extends DefaultHandler implements ParserCatalogo {
 
 	private StringBuilder buffer = new StringBuilder();
 
-    private boolean isConcepts;
-    private boolean isDatasets;
-    private boolean isConcept;
-    private boolean isCode;
-    private boolean isLabel;
-    private boolean isDatasetAGuardarMapa;
-    private boolean isConceptAGuardarLista;
-    private boolean guardarNombreCategoria;
-    private boolean isDataset;
-    private boolean isTitle;
-    private boolean isDescription;
-    private boolean isTheme;
-    
-    private int nConcept; //Para controlar en que nivel estamos
-    private int nConceptNoGuardar;
-    
-    private String idConcept;
-    private String idDataset;
-    private String title;
-    private String description;
-    private String theme;
+	private boolean isConcepts;
+	private boolean isDatasets;
+	private boolean isConcept;
+	private boolean isCode;
+	private boolean isLabel;
+	private boolean isDatasetAGuardarMapa;
+	private boolean isConceptAGuardarLista;
+	private boolean guardarNombreCategoria;
+	private boolean isDataset;
+	private boolean isTitle;
+	private boolean isDescription;
+	private boolean isTheme;
+	
+	private int nConcept; //Para controlar en que nivel estamos
+	private int nConceptNoGuardar;
+	
+	private String idConcept;
+	private String idDataset;
+	private String title;
+	private String description;
+	private String theme;
     
 
 	/**  
@@ -130,7 +130,7 @@ public class ManejadorXML extends DefaultHandler implements ParserCatalogo {
 
 		super.startDocument();
 		System.out.println("Comeienza el documento catalogo.xml del que optenemos la información");
-
+	
 		//Pongo todos las variables a false
 		
 	    isConcepts = false;
