@@ -9,8 +9,6 @@ import java.util.Map;
 
 /**
  * Interfaz que debe implementar la clase ManejadorXML.
-
-
  */
 
 public interface ParserCatalogo {
